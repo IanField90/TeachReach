@@ -20,8 +20,9 @@ end
 gem 'jquery-rails'
 
 gem 'devise'
-gem 'bcrypt-ruby', :require => "bcrypt"
+gem 'bcrypt-ruby', :require => 'bcrypt'
 gem 'cancan'
+gem 'json_builder'
 
 # Use unicorn as the web server
 # gem 'unicorn'

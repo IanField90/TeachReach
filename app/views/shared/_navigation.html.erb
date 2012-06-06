@@ -3,18 +3,17 @@
 		<div class="container">
 			<%= link_to "TeachReach", root_path, :class => 'brand' %>
 			<ul class="nav">
-				<li><%= link_to t('nav.home'), root_path %></li>
-				<li><%= link_to 'Courses', courses_path %></li>
-				<li><%= link_to 'Programmes', programmes_path %></li>
-				<li><%= link_to 'Parts', parts_path %></li>
+				<%= nav_link 'Home', root_path %>
+				<%= nav_link 'Courses', courses_path %>
+				<%= nav_link 'Programmes', programmes_path %>
+				<%= nav_link 'Parts', parts_path %>
 			</ul>
 			<ul class="nav pull-right">
 					<% if current_user %>
-						<li><%= link_to t('nav.logout'), logout_path %></li>
+						<%= nav_link 'Logout', logout_path %>
 					<% else %>
-						<li><%= link_to t('nav.signup'), signup_path %></li>
-						<li class="divider-vertical"></li>
-						<li><%= link_to t('nav.login'), login_path %></li>
+						<%= nav_link 'Sign up', signup_path %>
+						<%= nav_link 'Log in', login_path %>
 					<% end %>
 			</ul>
 		</div>
