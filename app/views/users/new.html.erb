@@ -1,18 +1,6 @@
 <h1><%= t('user.signup') %></h1>
 
 <%= form_for @user, :html => { :class => "form-stacked" } do |f|  %>
-	<% if @user.errors.any? %>
-	<div class="alert-message block-message error">
-		<p>
-			<strong>Form <%= t('errors.messages.invalid')%>!</strong>
-		</p>
-		<ul>
-			<% for message in @user.errors.full_messages %>
-			<li><%= message %></li>
-			<% end %>
-		</ul>
-	</div>
-	<% end %>
 	<div class="clearfix">
 		<%= f.label :email, t('user.email') %>
 		<div class="input">

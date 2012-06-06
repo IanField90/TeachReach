@@ -23,6 +23,7 @@ gem 'devise'
 gem 'bcrypt-ruby', :require => 'bcrypt'
 gem 'cancan'
 gem 'json_builder'
+gem 'nokogiri'
 
 # Use unicorn as the web server
 # gem 'unicorn'
