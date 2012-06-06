@@ -1,0 +1,23 @@
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+			<%= link_to "TeachReach", root_path, :class => 'brand' %>
+			<ul class="nav">
+				<li><%= link_to t('nav.home'), root_path %></li>
+				<li><%= link_to 'Courses', courses_path %></li>
+				<li><%= link_to 'Programmes', programmes_path %></li>
+				<li><%= link_to 'Parts', parts_path %></li>
+			</ul>
+			<ul class="nav pull-right">
+					<% if current_user %>
+						<li><%= link_to t('nav.logout'), logout_path %></li>
+					<% else %>
+						<li><%= link_to t('nav.signup'), signup_path %></li>
+						<li class="divider-vertical"></li>
+						<li><%= link_to t('nav.login'), login_path %></li>
+					<% end %>
+			</ul>
+		</div>
+	</div>
+</div>
+</div>

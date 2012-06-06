@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  integer: 
+  string: 
+  boolean: 
+
+two:
+  integer: 
+  string: 
+  boolean: 

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  integer: 
+  string: 
+  string: 
+  integer: 
+  integer: 
+
+two:
+  integer: 
+  string: 
+  string: 
+  integer: 
+  integer: 
