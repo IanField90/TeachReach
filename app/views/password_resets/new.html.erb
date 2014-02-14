@@ -1,8 +1,0 @@
-<h1>Reset Password</h1>
-<%= form_tag password_resets_path, :class => "form-stacked well", :method => :post do %>
-  <div class="field">
-    <%= label_tag :email, t('user.email') %>
-    <%= text_field_tag :email, params[:email] %>
-  </div>
-  <div class="actions"><%= submit_tag t('password_resets.reset_button'), :class => "btn primary" %></div>
-<% end %>
