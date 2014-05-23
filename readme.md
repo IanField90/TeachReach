@@ -9,3 +9,7 @@ Set .git/config up with heroku.account
       fetch = +refs/heads/*:refs/remotes/heroku/*
     [heroku]
       account = personal
+
+# Heroku
+
+    heroku config:set SITE_URL="http://yourheroku.herokuapp.com"

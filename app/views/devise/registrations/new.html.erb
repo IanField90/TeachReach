@@ -4,13 +4,28 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
-    <%= f.input :email, required: true, autofocus: true %>
-    <%= f.input :password, required: true %>
-    <%= f.input :password_confirmation, required: true %>
+    <table>
+      <tbody>
+        <tr>
+          <td style="width: 50%; text-align:left;"><%= f.label :email, required: true %></td>
+          <td style="width: 50%"><%= f.email_field :email, required: true, autofocus: true %></td>
+        </tr>
+        <tr>
+          <td style="width: 50%; text-align:left;"><%= f.label :password, required: true %></td>
+          <td style="width: 50%"><%= f.password_field :password %></td>
+        </tr>
+        <tr>
+          <td style="width: 50%; text-align:left;"><%= f.label :password_confirmation, required: true %></td>
+          <td style="width: 50%"><%= f.password_field :password_confirmation %></td>
+        </tr>
+
+      </tdody>
+    </table>
+
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit, "Sign up" %>
+    <%= f.button :submit, "Sign up", class: 'btn btn-primary' %>
   </div>
 <% end %>
 
