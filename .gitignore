@@ -6,7 +6,7 @@ tmp/
 .sass-cache/
 
 ## Privacy
-config.database.yml
+config/database.yml
 
 # OSX
 .DS_Store
