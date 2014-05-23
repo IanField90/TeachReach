@@ -29,9 +29,18 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 
+# Use postgresql as the database for Active Record
+gem 'pg'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
+end
+
+group :development do
+  # Annotations of schema information into models;
+  # run "bundle exec annotate --position before" after each schema change to keep it up to date
+  gem "annotate"
 end
 
 group :development, :test do
