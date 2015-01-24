@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
-ruby "2.1.1"
+ruby "2.1.5"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.1'
+gem 'rails', '4.2'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
@@ -65,7 +65,7 @@ end
 
 gem 'devise'
 
-gem 'cancan'
+gem 'cancancan', '~> 1.10'
 
 gem 'simple_form'
 
