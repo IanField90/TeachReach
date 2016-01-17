@@ -1,6 +1,6 @@
 # TeachReach
 TeachReach was a final year project at University, which I intend to re-write
-and release. The puprose of which was to provide an API and educational resource
+and release. The purpose of which was to provide an API and educational resource
 tool. An Android application is planned to leverage the content created using
 TeachReach
 
