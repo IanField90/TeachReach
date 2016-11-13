@@ -44,6 +44,7 @@ end
 
 group :development, :test do
   # Ruby objects as test data
+  gem 'awesome_print'
   gem "factory_girl_rails"
 
   # Testing with rspec

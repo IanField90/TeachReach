@@ -44,6 +44,7 @@ GEM
     arel (7.1.4)
     autoprefixer-rails (6.5.3)
       execjs
+    awesome_print (1.7.0)
     bcrypt (3.1.11)
     better_errors (2.1.1)
       coderay (>= 1.0.0)
@@ -210,6 +211,7 @@ PLATFORMS
 
 DEPENDENCIES
   annotate
+  awesome_print
   better_errors
   binding_of_caller
   bootstrap-sass (~> 3.3.7)
