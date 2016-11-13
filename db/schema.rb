@@ -10,10 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151201101143) do
+ActiveRecord::Schema.define(version: 20161113105805) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "courses", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "subject_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["subject_id"], name: "index_courses_on_subject_id", using: :btree
+  end
 
   create_table "subjects", force: :cascade do |t|
     t.string   "name"
@@ -23,10 +31,10 @@ ActiveRecord::Schema.define(version: 20151201101143) do
 
   create_table "topics", force: :cascade do |t|
     t.string   "name"
-    t.integer  "subject_id"
+    t.integer  "course_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["subject_id"], name: "index_topics_on_subject_id", using: :btree
+    t.index ["course_id"], name: "index_topics_on_course_id", using: :btree
   end
 
   create_table "users", force: :cascade do |t|
@@ -46,5 +54,6 @@ ActiveRecord::Schema.define(version: 20151201101143) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end
 
-  add_foreign_key "topics", "subjects"
+  add_foreign_key "courses", "subjects"
+  add_foreign_key "topics", "courses"
 end

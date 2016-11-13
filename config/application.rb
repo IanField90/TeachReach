@@ -30,6 +30,11 @@ module TeachReach
     end
 
     # Disable the autogeneration of assets
-    config.generators.assets = false
+    config.generators do |g|
+      g.assets            false
+      g.helper            false
+      g.test_framework    nil
+      g.jbuilder          false
+    end
   end
 end

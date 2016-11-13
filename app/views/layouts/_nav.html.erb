@@ -17,7 +17,6 @@
       <li class="<%= "active" if current_page?(root_path) %>"><%= link_to "Home", root_path %></li>
       <% if current_user %>
         <li><%= link_to t('nav.subjects'), subjects_path %></li>
-        <li><%= link_to t('nav.topics'), topics_path %></li>
       <% end %>
     </ul>
     <ul class="nav navbar-nav navbar-right">

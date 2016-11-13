@@ -35,8 +35,6 @@ group :doc do
 end
 
 group :development do
-  # Annotations of schema information into models;
-  # run "bundle exec annotate --position before" after each schema change to keep it up to date
   gem "annotate"
   gem "better_errors"
   gem "binding_of_caller"

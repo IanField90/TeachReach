@@ -1,12 +1,17 @@
 # == Schema Information
 #
-# Table name: subjects
+# Table name: topics
 #
 #  id         :integer          not null, primary key
 #  name       :string
+#  course_id  :integer
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
 
-class Subject < ApplicationRecord
+FactoryGirl.define do
+  factory :topic do
+    name "Sine"
+    course
+  end
 end

@@ -8,5 +8,8 @@
 #  updated_at :datetime         not null
 #
 
-class Subject < ApplicationRecord
+FactoryGirl.define do
+  factory :subject do
+    name "Maths"
+  end
 end
