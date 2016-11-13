@@ -1,18 +1,18 @@
 source 'https://rubygems.org'
 
-ruby "2.1.5"
+ruby "2.3.1"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2'
+gem 'rails', '5.0'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.3'
+gem 'sass-rails', '~> 5.0.0'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
 # Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
+gem 'coffee-rails', '~> 4.2.1'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
@@ -47,7 +47,7 @@ group :development, :test do
   gem "factory_girl_rails"
 
   # Testing with rspec
-  gem 'rspec-rails', '~> 2.0'
+  gem 'rspec-rails', '~> 3.5.2'
   gem 'minitest'
 
   # Test coverage - see https://github.com/colszowka/simplecov/issues/281 for
@@ -71,5 +71,4 @@ gem 'cancancan', '~> 1.10'
 
 gem 'simple_form'
 
-gem 'bootstrap-sass', '~> 3.1.1'
-
+gem 'bootstrap-sass', '~> 3.3.7'
