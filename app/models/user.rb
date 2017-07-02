@@ -13,8 +13,8 @@
 #  last_sign_in_at        :datetime
 #  current_sign_in_ip     :string
 #  last_sign_in_ip        :string
-#  created_at             :datetime
-#  updated_at             :datetime
+#  created_at             :datetime         not null
+#  updated_at             :datetime         not null
 #
 
 class User < ApplicationRecord
