@@ -27,7 +27,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 
 # Use postgresql as the database for Active Record
-gem 'pg'
+gem 'pg', '~> 0.18'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
