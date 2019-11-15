@@ -70,4 +70,4 @@ gem 'cancancan', '~> 1.10'
 
 gem 'simple_form'
 
-gem 'bootstrap-sass', '~> 3.3.7'
+gem 'bootstrap-sass', '~> 3.4.1'
